@@ -31,7 +31,7 @@ A modern **Ramadan Planner 2026** built with React to help you track your worshi
 
 ---
 
-## Overview
+## 📖Overview
 
 Ramadan Planner 2026 is a simple React app to help you stay consistent during Ramadan by tracking your daily worship, plans, and progress across the 30 days.
 
@@ -44,7 +44,7 @@ Ramadan Planner 2026 is a simple React app to help you stay consistent during Ra
   
 ---
 
-## Features
+## ✨Features
 
 - Ramadan Calendar (30-day grid)
   - Shows Today, Selected day, and a time-based status (not started / partial / complete)
@@ -75,12 +75,12 @@ Ramadan Planner 2026 is a simple React app to help you stay consistent during Ra
 
 ## 🚀Getting Started
 
-### Prerequisites
+### 🧰Prerequisites
 
 - **Node.js** 
 - **npm** 
 
-### Installation
+### ⚙️Installation
 
 1. **Clone the repository:**
 
@@ -99,7 +99,7 @@ Ramadan Planner 2026 is a simple React app to help you stay consistent during Ra
    ```sh
     npm install
    ```
-### Run 
+### ▶️Run 
   
 4. Run the project with:
 
@@ -111,7 +111,8 @@ Ramadan Planner 2026 is a simple React app to help you stay consistent during Ra
 
 --- 
 
-## 🏗️Project Structure
+## 
+🗂️ Project Structure
 
 ```sh
 ramadanPlanner/
@@ -145,7 +146,7 @@ ramadanPlanner/
 
 ---
 
-## 🧾License
+## 📜License
 
 [MIT License](https://choosealicense.com/licenses). For more details, refer to the [LICENSE](./LICENSE) file.
 
@@ -154,6 +155,7 @@ ramadanPlanner/
 💖 *Built with love by [Ahmed ELashry](https://github.com/AAshry10)*  
 
 ---
+
 
 
 
