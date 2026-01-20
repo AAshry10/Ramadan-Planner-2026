@@ -1,0 +1,248 @@
+.quran-header {
+  margin-bottom: 2rem;
+}
+
+.progress-summary {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 30px;
+  background: var(--cream);
+  border-radius: 15px;
+  overflow: hidden;
+  border: 2px solid var(--gold-light);
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--gold-dark));
+  transition: width 0.5s ease;
+  border-radius: 15px;
+}
+
+.quran-tables {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.desktopTables {
+  display: block;
+}
+
+.mobileCards {
+  display: none;
+}
+
+.quran-table-section h3 {
+  margin-bottom: 1rem;
+  color: var(--dark-green);
+}
+
+.quran-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.quran-table thead {
+  background: var(--dark-green);
+  color: white;
+}
+
+.quran-table th,
+.quran-table td {
+  padding: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.quran-table th {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.quran-table tbody tr:hover {
+  background: var(--cream);
+}
+
+.quran-table tbody tr.completed {
+  background: var(--gold-light);
+}
+
+.juz-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.juz-checkbox:hover {
+  background: var(--cream);
+}
+
+.juz-checkbox .checkmark {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--gold);
+  border-radius: 6px;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.3s;
+}
+
+.juz-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.juz-checkbox input[type="checkbox"]:checked + .checkmark {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+.juz-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.adhkar-add-btn {
+  margin-top: 0;
+  align-self: center;
+  padding: 0.45rem 0.85rem;
+  background: white;
+  border: 2px solid var(--gold);
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--dark-green);
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: all 0.3s;
+  white-space: normal;
+  text-align: center;
+}
+
+.adhkar-add-btn:hover {
+  background: var(--gold);
+  color: white;
+}
+
+.adhkar-add-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .quran-tables {
+    grid-template-columns: 1fr;
+  }
+
+  .desktopTables {
+    display: none;
+  }
+
+  .mobileCards {
+    display: block;
+  }
+
+  .mobileCardsTitle {
+    margin: 0 0 1rem 0;
+    color: var(--dark-green);
+  }
+
+  .juzCardsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .juzCard {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 0.9rem;
+  }
+
+  .juzCardCompleted {
+    background: var(--gold-light);
+    border-color: var(--gold);
+  }
+
+  .juzCardHeader {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .juzCardTitle {
+    font-weight: 900;
+    color: var(--dark-green);
+  }
+
+  .juzCardMeta {
+    font-weight: 800;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  .juzCardRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.35rem 0;
+  }
+
+  .juzCardLabel {
+    color: var(--text-light);
+    font-weight: 800;
+    font-size: 0.85rem;
+  }
+
+  .juzCardValue {
+    font-weight: 800;
+    color: var(--text-dark);
+  }
+
+  .juzCardActions {
+    margin-top: 0.6rem;
+    display: flex;
+    justify-content: stretch;
+  }
+
+  .juzCardActions .adhkar-add-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .adhkar-add-btn {
+    padding: 0.4rem 0.55rem;
+    font-size: 0.75rem;
+    line-height: 1.15;
+  }
+
+  .juz-checkbox .checkmark {
+    width: 26px;
+    height: 26px;
+  }
+}
+

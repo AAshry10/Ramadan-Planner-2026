@@ -1,0 +1,98 @@
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.saveBtn {
+  padding: 0.45rem 0.95rem;
+  background: var(--gold);
+  border: 2px solid var(--gold);
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: 800;
+  font-size: 0.85rem;
+  transition: all 0.3s;
+}
+
+.saveBtn:hover {
+  filter: brightness(0.98);
+  transform: translateY(-1px);
+}
+
+.saveBtn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.savedList {
+  margin-top: 0.75rem;
+  padding: 0.85rem 1rem;
+  background: var(--cream);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+}
+
+.savedLabel {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: var(--gold-light);
+  border: 2px solid var(--gold);
+  color: var(--dark-green);
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+.savedItems {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.savedItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.65rem 0.75rem;
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.savedItemText {
+  color: var(--text-dark);
+  white-space: pre-wrap;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.savedItemActions {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.deleteBtn {
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  border: 2px solid var(--border-color);
+  background: white;
+  color: var(--text-dark);
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 0.8rem;
+  transition: all 0.3s;
+}
+
+.deleteBtn:hover {
+  border-color: var(--gold);
+  background: var(--gold-light);
+}
+

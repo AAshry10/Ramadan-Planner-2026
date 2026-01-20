@@ -1,0 +1,86 @@
+.adhkar-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: var(--cream);
+  border-radius: 10px;
+  cursor: default;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.adhkar-item:hover {
+  border-color: transparent;
+  background: var(--cream);
+}
+
+.adhkar-add-btn {
+  margin-top: 0.75rem;
+  align-self: flex-start;
+  padding: 0.45rem 0.85rem;
+  background: white;
+  border: 2px solid var(--gold);
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--dark-green);
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: all 0.3s;
+}
+
+.adhkar-add-btn:hover {
+  background: var(--gold);
+  color: white;
+}
+
+.adhkar-add-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.adhkar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.adhkar-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.adhkar-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-green);
+  text-align: right;
+}
+
+.adhkar-count {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--dark-green);
+  background: var(--gold-light);
+  border: 2px solid var(--gold);
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  white-space: nowrap;
+}
+
+.adhkar-arabic {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--dark-green);
+  direction: rtl;
+  text-align: right;
+}
+
+.adhkar-english {
+  font-size: 0.95rem;
+  color: var(--text-light);
+}
+

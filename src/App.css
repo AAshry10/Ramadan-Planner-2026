@@ -1,0 +1,73 @@
+/* Islamic Elegant Design with Gold Accents */
+:root {
+  --gold: #d4af37;
+  --gold-light: #f4e4bc;
+  --gold-dark: #b8941f;
+  --cream: #faf8f3;
+  --dark-green: #1a5f3f;
+  --light-green: #e8f5e9;
+  --text-dark: #2c2c2c;
+  --text-light: #666;
+  --border-color: #e0e0e0;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px var(--shadow);
+  border-top: 4px solid var(--gold);
+  margin-bottom: 2rem;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--dark-green);
+  font-size: 1.8rem;
+  font-weight: 400;
+  border-bottom: 2px solid var(--gold-light);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.card h3 {
+  color: var(--dark-green);
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 1.5rem 0 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card h2 {
+    font-size: 1.55rem;
+  }
+
+  .card h3 {
+    font-size: 1.15rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1.1rem;
+  }
+
+  .card h2 {
+    font-size: 1.35rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .card h3 {
+    font-size: 1.05rem;
+  }
+}
