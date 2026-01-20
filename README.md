@@ -85,7 +85,7 @@ Ramadan Planner 2026 is a simple React app to help you stay consistent during Ra
 1. **Clone the repository:**
 
     ```sh
-     git clone https://github.com/AAshry10/Foodies-App.git
+     git clone https://github.com/AAshry10/Ramadan-Planner-2026.git
     ```
 
 2. **Navigate to the project Backend directory (If not already navigated):**
@@ -154,5 +154,6 @@ ramadanPlanner/
 💖 *Built with love by [Ahmed ELashry](https://github.com/AAshry10)*  
 
 ---
+
 
 
