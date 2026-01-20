@@ -134,6 +134,11 @@ function AppLayout() {
       <div className={styles['app-container']}>
         <Outlet />
       </div>
+
+      <div className={styles['app-footer']}>
+        <p>Designed and Developed by <a href="https://www.ahmedelashry.com/" target="_blank" rel="noopener noreferrer">Ahmed Elashry</a></p>
+        <span>© {new Date().getFullYear()} Ramadan Planner. All rights reserved.</span>
+      </div>
     </div>
   )
 }
