@@ -42,7 +42,7 @@ Ramadan Planner 2026 is a simple React app to help you stay consistent during Ra
 - Keep everything saved automatically using Redux Toolkit + localStorage
 - Prepare for Eid with a simple Eid checklist
 
-[![Live Demo](https://img.shields.io/badge/Click%20Here%20to%20Try-805AD5?style=for-the-badge&logo=google-chrome)](https://ramadan26planner.com)
+[![Live Demo](https://img.shields.io/badge/Click%20Here%20to%20Try-D4AF37?style=for-the-badge&logo=google-chrome)](https://ramadan26planner.com)
   
 ---
 
@@ -157,6 +157,7 @@ ramadanPlanner/
 💖 *Built with love by [Ahmed ELashry](https://github.com/AAshry10)*  
 
 ---
+
 
 
 
