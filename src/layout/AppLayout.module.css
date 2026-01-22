@@ -116,9 +116,17 @@
   border: 1px solid rgba(255, 255, 255, 0.35);
   background: rgba(255, 255, 255, 0.92);
   color: #134a33;
+  -webkit-text-fill-color: #134a33;
   font-weight: 600;
+  min-width: 9.5rem;
+  cursor: pointer;
   /* Ensure the browser's calendar icon is visible */
   color-scheme: light;
+}
+
+.date-input::placeholder {
+  color: rgba(19, 74, 51, 0.6);
+  -webkit-text-fill-color: rgba(19, 74, 51, 0.6);
 }
 
 .date-input:focus {
