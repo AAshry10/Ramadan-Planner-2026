@@ -21,9 +21,6 @@ function AppLayout() {
   const quranJuz = useSelector(selectQuranJuz)
   const cx = (...classes) => classes.filter(Boolean).join(' ')
   const QURAN_COMPLETION_MODAL_SHOWN_KEY = 'ramadanPlannerQuranCompletionModalShown'
-  const [dateInputType, setDateInputType] = useState(() =>
-    importantDates?.ramadanStart ? 'date' : 'text'
-  )
 
   const tabs = useMemo(
     () => [
@@ -93,13 +90,6 @@ function AppLayout() {
     }
   }, [allQuranCompleted, quranCompletionModalShown])
 
-  // Mobile UX: when empty, <input type="date"> can appear like blank whitespace.
-  // Use a text placeholder until the user taps, then switch to date picker.
-  useEffect(() => {
-    if (importantDates?.ramadanStart) setDateInputType('date')
-    else setDateInputType('text')
-  }, [importantDates?.ramadanStart])
-
   return (
     <div className={styles.app}>
       <QuranCompletionModal
@@ -119,18 +109,9 @@ function AppLayout() {
               Ramadan start:
               <input
                 className={styles['date-input']}
-                type={dateInputType}
+                type="date"
                 value={importantDates?.ramadanStart || ''}
-                placeholder={dateInputType === 'text' ? 'Select date' : undefined}
                 onChange={(e) => dispatch(updateSection({ section: 'importantDates', data: { ramadanStart: e.target.value } }))}
-                onFocus={() => {
-                  // Switch to date to open the native date picker on mobile
-                  if (dateInputType !== 'date') setDateInputType('date')
-                }}
-                onBlur={(e) => {
-                  // If user leaves it empty, restore placeholder mode
-                  if (!e.target.value) setDateInputType('text')
-                }}
               />
             </label>
           </div>
